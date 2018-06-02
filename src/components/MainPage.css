@@ -1,12 +1,32 @@
-
-ul.Foodbox {
-    width: 300pxpx;
-    margin: 30px auto;
-    padding: 0;
+.wrapper {
+  border: 1px solid black;
+  overflow: hidden;
+}
+.allFoodbox {
+    width: 50%;
+    /* margin: 30px auto; */
+    padding: 20px;
     box-shadow: 1px 1px 5px rgba(0,0,0, 0.2);
     font-family: 'Courier New', Courier, monospace;
-    font-weight: bold
+    font-weight: bold;
+    float:left;
   }
+
+.showPrice {
+  width: 30%;
+  border: 1px solid rgb(68, 155, 150);
+  border-width: 2px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 30px auto auto auto;
+  background-color: rgb(68, 155, 150);
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+/* .showPrice div {
+  font-style: white;
+} */
 
 ul {
     list-style: none;

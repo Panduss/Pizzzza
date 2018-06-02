@@ -1,5 +1,5 @@
 export default {
-    cart: [],
+    cart: [0],
     base: [
             { id: 1, name: '20cm NY Style', price: 6.45 },
             { id: 2, name: '25cm NY Style', price: 8.99 },

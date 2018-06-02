@@ -1,11 +1,11 @@
 import cart from './cart'
-import base from './base'
-import sauce from './sauce'
-import topping from './topping'
+import pizzabase from './base'
+import pizzasauce from './sauce'
+import pizzatopping from './topping'
 
 export default {
     cart: cart,
-    base: base,
-    sauce: sauce,
-    topping: topping
+    base: pizzabase,
+    sauce: pizzasauce,
+    topping: pizzatopping
 }

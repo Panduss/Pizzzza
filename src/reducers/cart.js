@@ -1,9 +1,20 @@
-import initialState from './initialState';
+// import initialState from './initialState';
+// const price = 0
 
-const cart = (state = initialState.cart, action = {} ) => {
+// const cart = (state = [], action = {} ) => {
+// switch(action.type) {
+//     case 'ADD_ITEM':
+//         return price + (action.payload.price)
+//     default:
+//     return state
+//     }
+// }
+
+const cart = (state = 0, action = {} ) => {
     switch(action.type) {
         case 'ADD_ITEM' :
-            return [...state, action.item]
+        // const newItem = Number(action.payload.price)
+            return state + action.payload.price
         case 'DELETE_ITEM' :
             return state.filter (i => i.id !== action.item.id)
         default: 
@@ -12,5 +23,6 @@ const cart = (state = initialState.cart, action = {} ) => {
         //     return  state
     }
 }
+
 
 export default cart

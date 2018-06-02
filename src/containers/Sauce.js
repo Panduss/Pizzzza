@@ -4,16 +4,18 @@ import './pizzaConfig.css'
 import './AddItemButton.css'
 import { connect } from 'react-redux'
 import { addToCart } from '../actions/cart'
-
-
+import { bindActionCreators } from 'redux';
 
 class PizzaSauce extends Component {
   renderList() {
-    return this.props.sauce.map((sauce) => {
+    return this.props.sauce.map((item) => {
       return (
-        <li className="Foodbox" key={sauce.id}>
-        <p className="name">{sauce.name} </p>
-        <p className="price">{sauce.price} €</p>
+        <li 
+        key={item.id}
+        onClick={() => this.props.addToCart(item)}
+        className="Foodbox">
+        <p className="name">{item.name} </p>
+        <p className="price">{item.price} €</p>
         </li>
       )
     })
@@ -34,4 +36,8 @@ function mapStateToProps(state) {
   }
 }
 
-export default connect(mapStateToProps)(PizzaSauce)
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators({ addToCart: addToCart }, dispatch)
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(PizzaSauce)

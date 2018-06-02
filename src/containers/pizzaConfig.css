@@ -6,36 +6,39 @@ li.Foodbox {
     max-width: 70%;
     align-items: center;
     margin: auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    max-height: 80px;
 
   }
 
-  li.Foodbox {
-    width: 300pxpx;
+  /* li.Foodbox {
+    width: 300px;
     margin: 30px auto;
     padding: 0;
     box-shadow: 1px 1px 5px rgba(0,0,0, 0.2);
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold
-  }
+
+  } */
 
 ul {
     list-style: none;
   }
   
-  li.Foodbox p {
+li.Foodbox p {
     flex: 1;
     padding: 12px 24px;
     text-align: left;
     font-size: 150%;
   }
   
-  li.Foodbox p.name {
+li.Foodbox p.name {
     font-weight: bold;
     vertical-align: middle;
   }
   
- li.Foodbox p.price {
-    max-width: 100px;
+li.Foodbox p.price {
+    max-width: 120px;
+    text-align: right;
   }
 
 /* 
