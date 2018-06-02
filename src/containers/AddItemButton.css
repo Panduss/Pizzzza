@@ -1,0 +1,12 @@
+button.PlusOne {
+    flex: 1;
+    border: 1px solid #ccc;
+    font-size: 150%;
+    margin: 35px;
+    cursor: pointer;
+    max-width: 70px;
+  }
+  
+  button.PlusOne:hover {
+    background-color: #eee;
+  }

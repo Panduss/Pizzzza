@@ -1,0 +1,82 @@
+li.Foodbox {
+    display: flex;
+    align-content: space-between;
+    align-items: left;
+    border: 1px solid #ccc;
+    max-width: 70%;
+    align-items: center;
+    margin: auto;
+
+  }
+
+  li.Foodbox {
+    width: 300pxpx;
+    margin: 30px auto;
+    padding: 0;
+    box-shadow: 1px 1px 5px rgba(0,0,0, 0.2);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold
+  }
+
+ul {
+    list-style: none;
+  }
+  
+  li.Foodbox p {
+    flex: 1;
+    padding: 12px 24px;
+    text-align: left;
+    font-size: 150%;
+  }
+  
+  li.Foodbox p.name {
+    font-weight: bold;
+    vertical-align: middle;
+  }
+  
+ li.Foodbox p.price {
+    max-width: 100px;
+  }
+
+/* 
+  li.Base {
+    display: flex;
+    align-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+  }
+  
+  li.Base p {
+    flex: 1;
+    padding: 12px 24px;
+    font-size: 150%;
+  }
+  
+  li.Base span.item {
+    font-weight: bold;
+  }
+  
+  li.Base span.price {
+    max-width: 50px;
+  }
+
+  li.Base {
+    display: flex;
+    align-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+  }
+  
+  li.Base p {
+    flex: 1;
+    padding: 12px 24px;
+    font-size: 150%;
+  }
+  
+  li.Base span.item {
+    font-weight: bold;
+  }
+  
+  li.Base span.price {
+    max-width: 50px;
+  } */
