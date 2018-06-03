@@ -19,20 +19,20 @@ class TotalPrice extends PureComponent {
     }
 
 render() {
-    return (
-        <div className="showPrice">
-            <h2>You pay: </h2>
-            <p className="price">{this.pizzaPrice()} €</p>
-                <div>
-                    <p>Fast delivery:</p>
-                        <div>
-                            <button className="drone" onClick={() => this.props.letDrone()}>+</button>
-                            <button className="drone" onClick={() => this.props.noDrone()}>-</button>
-                        </div>
-                </div>
-        </div>
-    )
-}
+        return (
+            <div className="showPrice">
+                <h2>You pay: </h2>
+                <p className="price">{this.pizzaPrice()} €</p>
+                    <div>
+                        <p>Fast delivery:</p>
+                            <div>
+                                <button className="drone" onClick={() => this.props.letDrone()}>+</button>
+                                <button className="drone" onClick={() => this.props.noDrone()}>-</button>
+                            </div>
+                    </div>
+            </div>
+        )
+    }
 }
 
 
