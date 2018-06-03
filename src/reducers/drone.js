@@ -1,5 +1,4 @@
 
-
 const drone = (state = [], action = {} ) => {
     switch (action.type) {
             case 'LET_DRONE' :
