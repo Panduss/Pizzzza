@@ -1,18 +1,15 @@
 import React, { Component } from 'react'
-import './pizzaConfig.css'
-import './AddItemButton.css'
 import { connect } from 'react-redux'
 import { addBase } from '../actions/cart'
-import { removeItem } from '../actions/cart'
 import { bindActionCreators } from 'redux';
-import { base } from '../lib/felteet'
+import './pizzaConfig.css'
 
 class PizzaBase extends Component {
   renderList() {
     return this.props.base.map((item) => {
       return (
         <li 
-        key={item.id}
+        key={item.name}
         className="Foodbox">
         <p className="name">{item.name} </p>
         <p className="price">{item.price} €</p>
@@ -21,7 +18,6 @@ class PizzaBase extends Component {
       )
     })
   }
-
 
   render() {
     return (

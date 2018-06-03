@@ -7,8 +7,6 @@ import PriceShow from '../containers/Price'
 import './MainPage.css'
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-// import { removeItem } from '../actions/cart'
-
 
 export default class App extends Component {
     render() {
@@ -20,27 +18,14 @@ export default class App extends Component {
                     <p>Choose the sauce</p>
                     <PizzaSauce />
                     <p>Choose toppings (3 max)</p>
-                    <p> To start over the pizza topping selection, click here!</p>
+                    <p className="change"> You can change your mind, just click on the - button!</p>
 
                     <PizzaTopping />
-                </div>
-                <div className="showPrice">
+                    </div>
+                    <div>
                     <PriceShow />
                 </div>
             </div>
         )
     }
 }
-
-// function mapStateToProps(state) {
-//     return {
-//       topping: state.topping
-//     }
-//   }
-
-// function mapDispatchToProps(dispatch) {
-
-//     return bindActionCreators({ reset: reset }, dispatch)
-//   }
-
-// export default connect(null, mapDisptachToProps)(App)

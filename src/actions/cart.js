@@ -26,7 +26,6 @@ export function addTopping(topping) {
     }
 }
 
-
 export function removeItem(payload) {
     return {
             type: REMOVE,

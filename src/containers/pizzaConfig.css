@@ -6,10 +6,8 @@ li.Foodbox {
     max-width: 70%;
     align-items: center;
     margin: auto;
-    font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     max-height: 80px;
-
   }
 
 ul {
@@ -25,6 +23,7 @@ li.Foodbox p {
   
 li.Foodbox p.name {
     font-weight: bold;
+    max-height: 20px;
     vertical-align: middle;
     max-width: 60%;
   }
@@ -32,6 +31,7 @@ li.Foodbox p.name {
 li.Foodbox p.price {
     max-width: 20%;
     text-align: right;
+    max-height: 20px;
   }
 
 li.Foodbox button.check {
@@ -42,5 +42,77 @@ li.Foodbox button.check {
   max-height: 40px;
   max-width: 40px;
   border-radius: 50%;
-  background-color: rgb(68, 155, 150)
+  background-color: rgb(206, 126, 94)
+}
+
+li.Foodbox button.check1 {
+  margin: 20px 5px 20px 20px;
+  padding: auto;
+  width: 30px;
+  height: 30px;
+  max-height: 40px;
+  max-width: 40px;
+  border-radius: 50%;
+  background-color: rgb(206, 126, 94)
+}
+
+li.Foodbox button.check2 {
+  margin: 20px 20px 20px 5px;
+  padding: auto;
+  width: 30px;
+  height: 30px;
+  max-height: 40px;
+  max-width: 40px;
+  border-radius: 50%;
+  background-color: rgb(206, 126, 94)
+}
+
+.showPrice {
+  width: 20%;
+  border-width: 2px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 30px auto auto auto;
+  padding: 2% 2% 2% 2%;
+  background-color: rgb(206, 126, 94);
+  font-weight: bold;
+  position: fixed;
+  right: 7%;
+
+}
+
+.showPrice p.price {
+  font-size: 40px;
+  font-style: white;
+}
+
+.showPrice button.drone {
+  margin: 10px 10px 10px 10px;
+  padding: auto;
+  width: 30px;
+  height: 30px;
+  max-height: 40px;
+  max-width: 40px;
+  border-radius: 50%;
+  background-color: rgb(243, 241, 241)
+}
+
+.allFoodbox {
+  width: 55%;
+  box-shadow: 1px 1px 5px rgba(0,0,0, 0.2);
+  font-size: 30px;
+  font-weight: bold;
+  float:left;
+  background-color: rgb(255, 255, 255);
+  margin-left: 5%;
+  margin: 2% 0 2% 5%;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.allFoodbox p.change {
+  font-size: 15px;
+}
+
+ul {
+  list-style: none;
 }

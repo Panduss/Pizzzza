@@ -1,17 +1,16 @@
 import React, { Component } from 'react'
-// import AddItemButton from './AddItemButton'
-import './pizzaConfig.css'
-import './AddItemButton.css'
 import { connect } from 'react-redux'
 import { addSauce } from '../actions/cart'
 import { bindActionCreators } from 'redux';
+import './pizzaConfig.css'
+
 
 class PizzaSauce extends Component {
   renderList() {
     return this.props.sauce.map((item) => {
       return (
         <li 
-        key={item.id} 
+        key={item.name} 
         className="Foodbox">
         <p className="name">{item.name} </p>
         <p className="price">{item.price} €</p>

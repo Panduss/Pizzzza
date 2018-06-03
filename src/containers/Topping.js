@@ -1,11 +1,8 @@
 import React, { Component } from 'react'
-// import AddItemButton from './AddItemButton'
-import './pizzaConfig.css'
-import './AddItemButton.css'
 import { connect } from 'react-redux'
 import { addTopping, removeItem } from '../actions/cart'
 import { bindActionCreators } from 'redux';
-
+import './pizzaConfig.css'
 
 class PizzaTopping extends Component {
 
@@ -13,12 +10,12 @@ class PizzaTopping extends Component {
     return this.props.topping.map((item) => {
       return (
         <li 
-        key={item.id} 
+        key={item.name} 
         className="Foodbox">
         <p className="name">{item.name} </p>
         <p className="price">{item.price} €</p>
-        <button className="check" onClick={() => this.props.addTopping(item)}>+</button>
-        <button className="check" onClick={() => this.props.removeItem(item)}>-</button>
+        <button className="check1" onClick={() => this.props.addTopping(item)}>+</button>
+        <button className="check2" onClick={() => this.props.removeItem(item)}>-</button>
         </li>
       )
     })
