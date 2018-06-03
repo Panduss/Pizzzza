@@ -1,32 +1,30 @@
-import React, {Component} from 'react'
+
+import React, { PureComponent } from 'react'
 import { connect } from 'react-redux'
 
-
-class PriceShow extends Component {
- 
-    // totalPrice() {
-    // const basePrice = (thisprops.base ? pizza) 
-
-    // }
-    render() {
-        if(!this.props.cart) {
-            return <div>Select a nince foof</div>
-        }
-
-        return (
-            <div>
-                <h3>You pay:</h3>
-                {/* <TotalPrice /> */}
-            </div>
-        )
+class TotalPrice extends PureComponent {
+    pizzaPrice() {
+        const basePrice = (this.props.base ? this.props.base : 0)
+        const saucePrice = (this.props.sauce ? this.props.sauce : 0)
+        const toppingPrice = ((this.props.toppings).length * 0.5)
+        return parseFloat(basePrice + saucePrice + toppingPrice).toFixed(2)
     }
+render() {
+    return (
+        <div className="showPrice">
+            <h2>You pay: </h2>
+            <p className="price">{this.pizzaPrice()}</p>
+        </div>
+    )
+}
 }
 
 function mapStateToProps(state) {
     return {
-    cart: state.cart
-
+        base: state.choseBase,
+        sauce: state.choseSauce,
+        toppings: state.choseTopping,
     }
 }
 
-export default connect(mapStateToProps)(PriceShow)
+export default connect(mapStateToProps)(TotalPrice)

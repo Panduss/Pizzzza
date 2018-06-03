@@ -15,7 +15,7 @@ class PizzaSauce extends Component {
         className="Foodbox">
         <p className="name">{item.name} </p>
         <p className="price">{item.price} €</p>
-        <button className="button" onClick={() => this.props.addSauce(item)}>+</button>
+        <button className="check" onClick={() => this.props.addSauce(item)}>+</button>
         </li>
       )
     })

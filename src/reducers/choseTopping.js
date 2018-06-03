@@ -4,13 +4,16 @@ const initialState = []
 
 export const choseTopping = (state = [], action = {} ) => {
     switch(action.type) {
-        case 'ADD_TOPPING' :
-    if (state.length < 3) {
-        return state.concat(action.payload.price)
-    } else {
-        window.alert("You can only pick 3 toppings!")
+            case 'ADD_TOPPING' :
+                if (state.length < 3) {
+                    return state.concat(action.payload.price)
+                } else {
+                    window.alert("You can only pick 3 toppings!")
+                    return state
+                }
+            case 'REMOVE' :
+            return state - action.payload.price
+        default:    
+        return state;
     }
-    break;
-    }
-    return state;
 }

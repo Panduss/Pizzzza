@@ -3,10 +3,20 @@ import React, { Component } from 'react'
 import './pizzaConfig.css'
 import './AddItemButton.css'
 import { connect } from 'react-redux'
-import { addTopping } from '../actions/cart'
+import { addTopping, removeItem } from '../actions/cart'
 import { bindActionCreators } from 'redux';
 
+
 class PizzaTopping extends Component {
+
+  // handleChange = (event) => {
+  //   if (event.target.checked) {
+  //      state.dispatch(addTopping(event.target.value))
+  //   } else {
+  //       state.dispatch(removeItem(event.target.value))
+  //   }
+  // }
+
   renderList() {
     return this.props.topping.map((item) => {
       return (
@@ -20,6 +30,9 @@ class PizzaTopping extends Component {
       )
     })
   }
+
+  // <button className="check" onClick={() => this.props.addTopping(item)}>+</button>
+  // <button className="button" onClick={() => this.props.removeItem(item)}>-</button>
 
   render() {
     return (
@@ -36,7 +49,8 @@ function mapStateToProps(state) {
 }
 
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators({ addTopping: addTopping }, dispatch)
+  return bindActionCreators({ addTopping: addTopping, 
+                              removeItem: removeItem }, dispatch)
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(PizzaTopping)

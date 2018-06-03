@@ -16,7 +16,7 @@ class PizzaBase extends Component {
         className="Foodbox">
         <p className="name">{item.name} </p>
         <p className="price">{item.price} €</p>
-        <button className="button" onClick={() => this.props.addBase(item)}>+</button>
+        <button className="check" onClick={() => this.props.addBase(item)}>+</button>
         </li>
       )
     })

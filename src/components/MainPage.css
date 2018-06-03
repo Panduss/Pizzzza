@@ -8,6 +8,7 @@
     padding: 20px;
     box-shadow: 1px 1px 5px rgba(0,0,0, 0.2);
     font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
     font-weight: bold;
     float:left;
   }
@@ -24,9 +25,9 @@
   font-weight: bold;
 }
 
-/* .showPrice div {
-  font-style: white;
-} */
+.showPrice p.price {
+  font-style: gold;
+}
 
 ul {
     list-style: none;
