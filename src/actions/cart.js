@@ -2,6 +2,8 @@ export const ADD_BASE = "ADD_BASE"
 export const ADD_SAUCE = "ADD_SAUCE"
 export const ADD_TOPPING = "ADD_TOPPING"
 export const REMOVE = "REMOVE"
+export const LET_DRONE = "LET_DRONE"
+export const NO_DRONE = "NO_DRONE"
 
 export function addBase(base) {
     return {
@@ -29,5 +31,19 @@ export function removeItem(payload) {
     return {
             type: REMOVE,
             payload: payload
+    }
+}
+
+export function letDrone(drone) {
+    return {
+        type: LET_DRONE,
+        payload: drone
+    }
+}
+
+export function noDrone(drone) {
+    return {
+        type: NO_DRONE,
+        payload: drone
     }
 }

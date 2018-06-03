@@ -4,8 +4,6 @@
 }
 .allFoodbox {
     width: 50%;
-    /* margin: 30px auto; */
-    padding: 20px;
     box-shadow: 1px 1px 5px rgba(0,0,0, 0.2);
     font-family: 'Courier New', Courier, monospace;
     font-size: 30px;
@@ -23,10 +21,6 @@
   background-color: rgb(68, 155, 150);
   font-family: 'Courier New', Courier, monospace;
   font-weight: bold;
-}
-
-.showPrice p.price {
-  font-style: gold;
 }
 
 ul {
