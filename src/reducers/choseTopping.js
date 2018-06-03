@@ -1,7 +1,5 @@
 import { ADD_TOPPING } from '../actions/cart'
 
-const initialState = []
-
 export const choseTopping = (state = [], action = {} ) => {
     switch(action.type) {
             case 'ADD_TOPPING' :
