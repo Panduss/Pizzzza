@@ -9,14 +9,6 @@ import { bindActionCreators } from 'redux';
 
 class PizzaTopping extends Component {
 
-  // handleChange = (event) => {
-  //   if (event.target.checked) {
-  //      state.dispatch(addTopping(event.target.value))
-  //   } else {
-  //       state.dispatch(removeItem(event.target.value))
-  //   }
-  // }
-
   renderList() {
     return this.props.topping.map((item) => {
       return (
@@ -26,13 +18,11 @@ class PizzaTopping extends Component {
         <p className="name">{item.name} </p>
         <p className="price">{item.price} €</p>
         <button className="check" onClick={() => this.props.addTopping(item)}>+</button>
+        <button className="check" onClick={() => this.props.removeItem(item)}>-</button>
         </li>
       )
     })
   }
-
-  // <button className="check" onClick={() => this.props.addTopping(item)}>+</button>
-  // <button className="button" onClick={() => this.props.removeItem(item)}>-</button>
 
   render() {
     return (
