@@ -1,23 +1,33 @@
-export const ADD_ITEM = "ADD_ITEM"
-export const DELETE_ITEM = "DELETE_ITEM"
+export const ADD_BASE = "ADD_BASE"
+export const ADD_SAUCE = "ADD_SAUCE"
+export const ADD_TOPPING = "ADD_TOPPING"
+export const REMOVE = "REMOVE"
 
-export function addToCart(payload) {
+export function addBase(base) {
     return {
-            type: ADD_ITEM,
-            payload: payload
+            type: ADD_BASE,
+            payload: base
     }
 }
 
-// export function addToCart(payload) {
-//     return {
-//         type: ADD_ITEM,
-//         payload: payload
-//     }
-// }
+export function addSauce(sauce) {
+    return {
+            type: ADD_SAUCE,
+            payload: sauce
+    }
+}
 
-// export function removeItem(payload) {
-//     return {
-//         type: DELETE_ITEM,
-//         payload: payload
-//     }
-// }
+export function addTopping(topping) {
+    return {
+            type: ADD_TOPPING,
+            payload: topping
+    }
+}
+
+
+export function removeItem(payload) {
+    return {
+            type: REMOVE,
+            payload: payload
+    }
+}

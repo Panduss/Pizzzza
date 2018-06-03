@@ -34,12 +34,20 @@ li.Foodbox p {
 li.Foodbox p.name {
     font-weight: bold;
     vertical-align: middle;
+    max-width: 60%;
   }
   
 li.Foodbox p.price {
-    max-width: 120px;
+    max-width: 30%;
     text-align: right;
   }
+
+li.Foodbox input {
+  max-width: 10%;
+  margin: 10px 10px 10px 10px;
+}
+
+
 
 /* 
   li.Base {

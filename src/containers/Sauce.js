@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import './pizzaConfig.css'
 import './AddItemButton.css'
 import { connect } from 'react-redux'
-import { addToCart } from '../actions/cart'
+import { addSauce } from '../actions/cart'
 import { bindActionCreators } from 'redux';
 
 class PizzaSauce extends Component {
@@ -11,11 +11,11 @@ class PizzaSauce extends Component {
     return this.props.sauce.map((item) => {
       return (
         <li 
-        key={item.id}
-        onClick={() => this.props.addToCart(item)}
+        key={item.id} 
         className="Foodbox">
         <p className="name">{item.name} </p>
         <p className="price">{item.price} €</p>
+        <button className="button" onClick={() => this.props.addSauce(item)}>+</button>
         </li>
       )
     })
@@ -37,7 +37,7 @@ function mapStateToProps(state) {
 }
 
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators({ addToCart: addToCart }, dispatch)
+  return bindActionCreators({ addSauce: addSauce }, dispatch)
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(PizzaSauce)

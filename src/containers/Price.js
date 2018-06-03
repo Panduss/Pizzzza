@@ -2,7 +2,12 @@ import React, {Component} from 'react'
 import { connect } from 'react-redux'
 
 
-class Price extends Component {
+class PriceShow extends Component {
+ 
+    // totalPrice() {
+    // const basePrice = (thisprops.base ? pizza) 
+
+    // }
     render() {
         if(!this.props.cart) {
             return <div>Select a nince foof</div>
@@ -11,7 +16,7 @@ class Price extends Component {
         return (
             <div>
                 <h3>You pay:</h3>
-                <div>{this.props.cart} </div>
+                {/* <TotalPrice /> */}
             </div>
         )
     }
@@ -19,9 +24,9 @@ class Price extends Component {
 
 function mapStateToProps(state) {
     return {
-        cart: state.cart
+    cart: state.cart
 
     }
 }
 
-export default connect(mapStateToProps)(Price)
+export default connect(mapStateToProps)(PriceShow)
