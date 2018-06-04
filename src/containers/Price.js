@@ -13,9 +13,9 @@ class TotalPrice extends PureComponent {
         const toppingP = ((this.props.toppings).length * 0.5)
 
         if (this.props.drone == 0) {
-            return parseFloat(baseP + sauceP + toppingP).toFixed(1)
+            return parseFloat(baseP + sauceP + toppingP).toFixed(2)
             } else {
-                return (parseFloat(baseP + sauceP + toppingP) * 1.10).toFixed(1)
+                return (parseFloat(baseP + sauceP + toppingP) * 1.10).toFixed(2)
             }
     }
 

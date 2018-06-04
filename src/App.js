@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import pizza from './pizza.png';
 import './App.css';
-import rootReducer from './reducers/index'
 import MainPage from './components/MainPage'
 
 

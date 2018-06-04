@@ -5,8 +5,6 @@ import PizzaSauce from '../containers/Sauce'
 import PizzaTopping from '../containers/Topping'
 import PriceShow from '../containers/Price'
 import './MainPage.css'
-import { bindActionCreators } from 'redux';
-import { connect } from 'react-redux';
 
 export default class App extends Component {
     render() {

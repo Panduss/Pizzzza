@@ -1,9 +1,8 @@
-import { ADD_BASE } from '../actions/cart'
-
-export const choseBase = (state = [], action = {} ) => {
+export const choseBase = (state = null, action = {} ) => {
     switch (action.type) {
         case 'ADD_BASE' :
                 return action.payload.price
-        }
+        default:
         return state;
+        }
 }
