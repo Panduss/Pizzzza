@@ -1,6 +1,6 @@
 # PizzaConfigurator 
 Homework assignment for Codaisseur Academy on our 7th week. <br>
-This project contains a front-end. front-end uses React/Redux
+This project contains a front-end, that was made with React/Redux
 
 # Quickstart 🚀
 
