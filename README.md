@@ -1,6 +1,8 @@
-Homework assignment for Codaisseur Academy
+# PizzaConfigurator 
+Homework assignment for Codaisseur Academy on our 7th week. <br>
+This project contains a front-end. front-end uses React/Redux
 
-Quickstart 🚀
+# Quickstart 🚀
 
 clone this repo <br>
 run yarn <br>
